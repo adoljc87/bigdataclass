@@ -35,6 +35,8 @@ typed_df.show()
 typed_df.printSchema()
 
 # Group By and Select the data already aggregated
+df_1 = typed_df.groupBy("customer_id", "date") # Adol
+df_1.show()
 sum_df = typed_df.groupBy("customer_id", "date").sum()
 sum_df.show()
 
